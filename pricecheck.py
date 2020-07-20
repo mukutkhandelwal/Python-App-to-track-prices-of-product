@@ -19,7 +19,7 @@ def check_price():
     price = re.sub(',','',price)
     price = float(price)
     print(title,',',price)
-    if price<150000:
+    if price<150000: #add your desired price
         sendEmail()
 
 def sendEmail():
